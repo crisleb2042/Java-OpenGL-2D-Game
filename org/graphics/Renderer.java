@@ -1,5 +1,6 @@
 package org.graphics;
 
+import org.input.KeyInput;
 import org.input.MouseInput;
 
 import com.jogamp.newt.opengl.GLWindow;
@@ -29,6 +30,7 @@ public class Renderer {
 		window.setResizable(false);
 		window.addGLEventListener(new EventListener());
 		window.addMouseListener(new MouseInput());
+		window.addKeyListener(new KeyInput());
 		
 		
 		// Rendering Loop to keep the window continuously rendering

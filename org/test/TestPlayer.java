@@ -10,7 +10,6 @@ public class TestPlayer extends GameObject {
     }
     
     public void render() {
-        System.out.println("renderer");
         Graphics.fillRect(x, y, width, height);
     }
 }
